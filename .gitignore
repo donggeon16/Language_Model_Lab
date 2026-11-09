@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Generated artifacts and experiment runs
+runs/
+checkpoints/
+outputs/
+wandb/
+mlruns/
+
+# Local datasets and model weights
+data/raw/
+data/processed/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.bin
