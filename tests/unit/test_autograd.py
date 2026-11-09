@@ -36,7 +36,7 @@ def test_matrix_autograd():
     xg = x.grad
     wg = w.grad
     fdg = matrix_finite_difference(matrix_loss, x, w)
-    assert xg.shape == (2, 3)
-    assert wg.shape == (3, 4)
-    assert abs(xg[0, 0].item() - fdg.item()) < 1e-5
-    assert abs(xg[0, 0].item() - 112.0) < 1e-5
+    assert xg.shape == (2, 3)  # type: ignore
+    assert wg.shape == (3, 4)  # type: ignore
+    assert abs(xg[0, 0].item() - fdg.item()) < 1e-5  # type: ignore
+    assert abs(xg[0, 0].item() - 112.0) < 1e-5  # type: ignore
